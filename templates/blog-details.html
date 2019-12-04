@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-<body>
   <!--================Header Menu Area =================-->
   <header class="header_area">
     <div class="main_menu">
@@ -17,8 +16,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right navbar-social">
               <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -213,5 +212,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   <!--================ End Footer Area =================-->
 
   <script src="{% static 'scripts.js' %}"></script>
-</body>
 {% endblock %}
