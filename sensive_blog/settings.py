@@ -92,19 +92,14 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = os.getenv('STATIC_URL', '/static/')
-print("STATIC_URL", STATIC_URL)
 
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), )
-print("STATICFILES_DIRS", STATICFILES_DIRS)
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
-print("MEDIA_ROOT", MEDIA_ROOT)
 
 STATIC_ROOT = os.getenv("STATIC_ROOT")
-print("STATIC_ROOT", STATIC_ROOT)
 
 MEDIA_URL = os.getenv('MEDIA_URL', '/media/')
-print("MEDIA_URL", MEDIA_URL)
 
 INTERNAL_IPS = [
     '127.0.0.1',
